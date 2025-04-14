@@ -10,6 +10,7 @@
 		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
 		41BCE6732DAC9790005FE91B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41BCE6722DAC9790005FE91B /* GoogleService-Info.plist */; };
 		41BCE6762DAC9811005FE91B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 41BCE6752DAC9811005FE91B /* FirebaseCore */; };
+		41BCE6782DACA3EC005FE91B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 41BCE6772DACA3EC005FE91B /* FirebaseFirestore */; };
 		50379B232058CBB4000EE86E /* capacitor.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 50379B222058CBB4000EE86E /* capacitor.config.json */; };
 		504EC3081FED79650016851F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EC3071FED79650016851F /* AppDelegate.swift */; };
 		504EC30D1FED79650016851F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30B1FED79650016851F /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 			files = (
 				41BCE6762DAC9811005FE91B /* FirebaseCore in Frameworks */,
 				A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */,
+				41BCE6782DACA3EC005FE91B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +438,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 41BCE6742DAC9811005FE91B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
+		};
+		41BCE6772DACA3EC005FE91B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41BCE6742DAC9811005FE91B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

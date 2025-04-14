@@ -17,12 +17,6 @@ npx cap sync
 
 ## Run via XCode (iOS)
 ```
-./exec-ios.sh
+chmod u+x exec-ios.sh && ./exec-ios.sh
 ```
 > Builds the app for iOS and opens it in Xcode.
-
-## Run via Android Studio (Android)
-```
-./exec-android.sh
-```
-> Builds the app for Android and opens it in Android Studio.

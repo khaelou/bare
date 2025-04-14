@@ -1,9 +1,25 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'today.tyme.Bare',
   appName: 'bare',
-  webDir: 'dist'
+  webDir: 'dist',
+  server: {
+    cleartext: true,
+    allowNavigation: ['*'] // OR use Firebase-specific domains like 'firebaseio.com'
+  },
+  plugins: {
+    CapacitorHttp: {
+      enabled: true
+    }
+  },
+  ios: {
+    contentInset: 'always',
+    allowsLinkPreview: true,
+    scrollEnabled: true,
+    limitsNavigationsToAppBoundDomains: false,
+    handleApplicationNotifications: true,
+  }
 };
 
 export default config;

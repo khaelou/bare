@@ -30,3 +30,10 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+
+dev-guide
+exec-deploy-hosting-dev.sh
+exec-deploy-hosting-disable.sh
+exec-deploy-hosting-prod.sh
+exec-deploy-rules.sh
+exec-deploy.sh

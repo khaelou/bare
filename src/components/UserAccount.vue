@@ -1,11 +1,15 @@
 <template>
   <div id="container">
     <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>Hi {{ auth.currentUser!.displayName }}, <a target="_blank" rel="noopener noreferrer" @click.passive="signOut(auth)">Sign Out</a></p>
   </div>
 </template>
 
 <script setup lang="ts">
+
+import { auth } from "@/clientHandler";
+import { signOut } from "firebase/auth";
+
 defineProps({
   name: String,
 });

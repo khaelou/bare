@@ -24,3 +24,9 @@ import { clientInitialized } from '@/clientHandler';
 import UserAccount from '@/components/UserAccount.vue';
 import Welcome from '@/components/Welcome.vue';
 </script>
+
+<style>
+ :root {
+    --url: url('');
+  }
+</style>

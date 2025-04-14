@@ -45,7 +45,7 @@
     </ion-content>
     <ion-fab slot="fixed" horizontal="end" vertical="bottom" style="margin-right: calc(10px); margin-bottom: calc(135px);">
       <ion-fab-button color="primary" mode="ios" @click="closeModal()">
-        <ion-icon style="width: 32px; height: 32px; margin-left: -1.5px;" src="" />
+        <ion-icon slot="icon-only" :icon="airplane"></ion-icon>
       </ion-fab-button>
     </ion-fab>
 </template>
@@ -53,7 +53,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { IonContent, IonHeader, IonText, IonTitle, IonIcon, IonAvatar, IonToolbar, IonList, IonInput, IonFab, IonFabButton, IonButton, IonItem, IonProgressBar, isPlatform } from "@ionic/vue";
-import { logIn, logoGoogle, help } from "ionicons/icons";
+import { logIn, airplane, help } from "ionicons/icons";
 import { auth, clientInitialized, closeSetupOnboard, closeModal } from "@/clientHandler";
 
 import { db } from "@/firebase"; 
@@ -92,7 +92,7 @@ const handleEmail = async (event: any) => {
       const userAvatarSrc = document.querySelector('.userAvatarSrc');
       if (userAvatarSrc) {
         //console.log("(signInModal) RESET_PHOTO_IN_VIEW");
-        userAvatarSrc.setAttribute('src', 'https://firebasestorage.googleapis.com/v0/b/bare-ai.firebasestorage.app/o/bare%2Favatar.svg?alt=media&token=046ca0a7-c04c-4cbd-923e-e457a6e5e3d0'); // Reset to default avatar
+        userAvatarSrc.setAttribute('src', '/assets/avatar.svg'); // Reset to default avatar
       }
       return;
     }

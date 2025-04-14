@@ -5,6 +5,7 @@ const config: CapacitorConfig = {
   appName: 'bare',
   webDir: 'dist',
   server: {
+    cleartext: true,
     allowNavigation: ['*'] // OR use Firebase-specific domains like 'firebaseio.com'
   },
   plugins: {

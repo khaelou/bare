@@ -14,7 +14,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyC1mtJtAtu8EEFs5ms7csz6lKtYv4gT4t4",
   authDomain: "bare-ai.firebaseapp.com",
   projectId: "bare-ai",
-  storageBucket: "bare-ai.appspot.com", // ✅ fixed bucket name
+  storageBucket: "bare-ai.firebasestorage.app",
   messagingSenderId: "1075487874396",
   appId: "1:1075487874396:web:afff107b2b3d055250f599",
   measurementId: "G-0L31TLMB0E"
@@ -23,11 +23,15 @@ const firebaseConfig = {
 // Initialize Firebase app
 const app = initializeApp(firebaseConfig);
 
-const db = getFirestore(app);
-/*
-const db = initializeFirestore(app, {
+// `FirestoreSettings` interface extends `PrivateSettings` which contains `useFetchStreams`.
+const firestoreSettings: FirestoreSettings /*& { useFetchStreams: boolean } */ = {
+  //experimentalAutoDetectLongPolling: true,
   experimentalForceLongPolling: true,
-});*/
+	//useFetchStreams: true
+};
+
+//const db = getFirestore(app);
+const db = initializeFirestore(app, firestoreSettings, '(default)');
 
 // Other Firebase services
 const storage = getStorage(app);

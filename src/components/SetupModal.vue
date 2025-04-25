@@ -29,18 +29,11 @@
 </template>
   
 <script setup lang="ts">
-import { IonHeader, IonToolbar, IonTitle, IonProgressBar, IonContent, IonIcon, IonButton, IonText, modalController, isPlatform } from "@ionic/vue";
-import { location, camera, idCard, logIn, glasses } from "ionicons/icons";
-import { Camera, CameraResultType } from '@capacitor/camera';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonButton, modalController } from "@ionic/vue";
+import {idCard, logIn} from "ionicons/icons";
 import JoinModal from '@/components/JoinModal.vue';
 import SignInModal from '@/components/SignInModal.vue';
-import { clientInitialized, clientOnlyBrowsing } from "@/clientHandler";
 import { ref, onMounted } from "vue";
-
-let geoBtn, camBtn : any;
-
-const isBouncing = ref(false);
-const isWiggling = ref(false);
 
 onMounted(() => {
   //checkDesktopDisplay();
@@ -60,48 +53,33 @@ onMounted(() => {
         window.location.href = '/';
         
         if (window.history.replaceState) {
-          window.history.replaceState({}, 'Tyme', `/`);
+          window.history.replaceState({}, 'Bare', `/`);
         }
       }, 500)
     }
   }
 })
 
-async function initScroll() {
-  console.log('(setupModal) InitScroll');
-
-  const scrollGuide = document.querySelector(".scrollGuide"); // 0 w/o prevMonth
-  
-  if (scrollGuide) {
-    console.log('scrollGuide:', scrollGuide);
-    //console.log('SCROLL_SUCCESS:', scrollGuide);
-
-    scrollGuide.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  } else {
-    console.log('SCROLL_ERROR');
-  }
-}
-
 const joinModal = async function() {
-    const modal = await modalController.create({
-      component: JoinModal,
-      cssClass: 'fullscreen',
-      backdropDismiss: false,
-    });
-    return modal.present().then(() => {
-      console.log('(setupModal) joinModal: Create Account');
-    });
+  const modal = await modalController.create({
+    component: JoinModal,
+    cssClass: 'fullscreen',
+    backdropDismiss: false,
+  });
+  return modal.present().then(() => {
+    console.log('(setupModal) joinModal: Create Account');
+  });
 };
 
 const signInModal = async function() {
-    const modal = await modalController.create({
-      component: SignInModal,
-      cssClass: 'fullscreen',
-      backdropDismiss: false,
-    });
-    return modal.present().then(() => {
-      console.log('(setupModal) signInModal: Returning User');
-    });
+  const modal = await modalController.create({
+    component: SignInModal,
+    cssClass: 'fullscreen',
+    backdropDismiss: false,
+  });
+  return modal.present().then(() => {
+    console.log('(setupModal) signInModal: Returning User');
+  });
 };
 
 function joinListener() {
@@ -112,12 +90,6 @@ function joinListener() {
 function signInListener() {
   console.log('(setupModal) Open SignInModal:');
   signInModal();
-}
-
-async function checkCameraPermissions() {
-  if (await Camera.checkPermissions()) {
-    console.log('(checkCameraPermissions) GRANTED!');
-  }
 }
 </script>
 

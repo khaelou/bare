@@ -1,0 +1,13 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Publicly accessible avatars (no authentication required to read)
+    match /users/{userId}/{file} {
+      allow read: if request.auth != null;  // Allow all authenticated users to read avatars
+      allow write: if request.auth != null;  // Allow all authenticated users to upload avatars
+      allow read, write, delete: if request.auth != null && request.auth.uid != null; // Allow users to delete their own avatars
+    }
+  }
+}

@@ -37,7 +37,7 @@ const db = initializeFirestore(app, firestoreSettings, '(default)');
 const storage = getStorage(app);
 const analytics = getAnalytics(app);
 
-setLogLevel("debug");
+setLogLevel("error");
 
 console.log("(App) Firebase initialized!");
 

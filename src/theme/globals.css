@@ -1,0 +1,1499 @@
+body {
+    background-color: transparent;
+}
+
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+
+.mapboxgl-ctrl-logo {
+    visibility: hidden !important;
+}
+
+.mapboxgl-ctrl-attrib {
+    visibility: hidden !important;
+}
+
+.no-scroll {
+    --overflow: hidden;
+}
+
+.no-interact {
+    pointer-events: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.no-padding-content {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+}
+
+.no-padding-grid {
+    --ion-grid-padding: 0;
+    padding: 0;
+}
+  
+.no-padding-grid > ion-row {
+    margin: 0;
+}
+
+.no-padding-col {
+    padding: 0;
+    margin: 0;
+}
+
+.searchBarMobile {
+    margin-top: -16px;
+    margin-bottom: 8px;
+}
+
+.searchBarCircle {
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: -8px;
+}
+
+.searchBarCircleMobile {
+    margin-top: 4px;
+    margin-left: -2px;
+    margin-bottom: -8px;
+}
+
+.searchBarEvents {
+    margin-top: 4px;
+    margin-left: -12px;
+    margin-bottom: -8px;
+}
+
+.searchBarEventsMobile {
+    margin-top: 4px;
+    margin-left: -2px;
+    margin-bottom: -8px;
+}
+
+.searchBarTasks {
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: -8px;
+}
+
+.searchBarTasksMobile {
+    margin-top: 4px;
+    margin-left: -2px;
+    margin-bottom: -10px;
+}
+
+img {
+    pointer-events: none;
+}
+
+.segments {
+    margin: 14px !important;
+    margin-bottom: -4px !important;
+}
+
+.segmentsMobile {
+    margin: 0;
+    margin-left: 4px !important;
+    margin-right: 19px !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+ion-segment-button {
+    font-size: 15px;
+    height: 40px;
+}
+
+ion-fab {
+    z-index: 1000;
+  }
+
+ion-fab-button {
+    z-index: 1000;
+}
+
+ion-header.modal {
+    --border-radius: 16px !important;
+}
+
+ion-header.headerHeightExtended {
+    padding-top: 24px;
+}
+
+ion-header.videoViewer {
+    bottom: -36px;
+}
+
+ion-title {
+    color: white !important;
+}
+
+ion-modal.fullscreen {
+    --width: 100%;
+    --height: 100%;
+}
+
+ion-button.btnSpacer {
+    margin: 0px;
+}
+
+ion-button.btnSpacerV2 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+ion-button.btnSpacerMobile {
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+ion-button.btnSpacerEnd {
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+ion-button.btnSpacerEndMobile {
+    margin: 0px;
+}
+
+ion-button.btnSpacerEndToolbar {
+    padding-top: 8px;
+    margin-right: -3px;
+}
+
+ion-button.btnSpacerEndV2Toolbar {
+    margin-right: 8px;
+}
+
+ion-button.btnSpacerEndIcon {
+    padding-top: 8px;
+    margin-right: -8px;
+}
+
+ion-button.btnSpacerEndIconMobile {
+    padding-top: 16px;
+    margin-right: -8px;
+}
+
+ion-button.btnSpacerEndMobileToolbar {
+    margin-right: 4px;
+}
+
+ion-button.btnSpacerV2EndMobileToolbar {
+    margin-right: -20px;
+}
+
+ion-button.btnSpacerV3EndMobileToolbar {
+    margin-right: 4px;
+    margin-top: 16px;
+}
+
+ion-button.trunks {
+    --background-hover: transparent;
+    --ripple-color: transparent;
+}
+
+.silentDisable {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+ion-icon.trunksLogo {
+    --background-hover: transparent;
+    --ripple-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-right: 16px !important;
+}
+
+ion-icon.trunksLogoLarge {
+    width: 256px;
+    height: 256px;
+}
+
+ion-icon.trunksTitle {
+    width: 80px;
+    height: 50px;
+}
+
+h1.poolSection {
+    padding-left: 21px;
+    color: white !important;
+}
+
+h1.dayModalDay {
+    color: white !important;
+    margin-top: 4px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+}
+
+h1.profileName {
+    color: white !important;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+h1.profileNameMobile {
+    color: white !important;
+    margin-top: 16px;
+    margin-bottom: -14px;
+}
+
+.passportQR {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto !important;
+    margin-top: 10% !important;
+    margin-bottom: 8px !important;
+    border-radius: 36px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+}
+
+ion-content {
+    --background: linear-gradient(162deg, rgba(57, 57, 57, 0.6) 40%, rgba(20, 20, 20, 0.7) 100%);
+    color: white !important;
+}
+
+ion-content.cameraContent {
+    left: -10px !important;
+    --ion-background-color: rgb(29, 29, 29);
+    width: calc(100% + 35px);
+}
+
+ion-content.poolContent {
+    left: -10px !important;
+    --ion-background-color: rgb(29, 29, 29);
+    width: calc(100% + 35px);
+}
+
+ion-content.discoverContent {
+    left: -10px !important;
+    --ion-background-color: rgb(29, 29, 29);
+    width: calc(100% + 35px);
+}
+
+ion-content.discover::part(scroll) {
+    top: -14.62%;
+}
+
+ion-content.discoverIOS::part(scroll) {
+    top: -18.75%;
+}
+
+ion-content.discoverIOSPro::part(scroll) {
+    top: -18.75;
+}
+
+ion-content.discoverIOSMax::part(scroll) {
+    top: -18.75%;
+}
+
+ion-content.discoverIOSPlus::part(scroll) {
+    top: -18.75%;
+}
+
+ion-content.discoverIOSSE::part(scroll) {
+    top: -18.75%;
+}
+
+ion-content.discoverIOSIpad::part(scroll) {
+    top: -3.4678%;
+}
+
+ion-content.discoverIOSIpadPro6G::part(scroll) {
+    top: -3.086%;
+}
+
+ion-content.discoverIOSIpadMini::part(scroll) {
+    top: -3.51%;
+}
+
+ion-content.discoverIOSIpadPro4G::part(scroll) {
+    top: -1.168%;
+}
+
+ion-content.scrollHide {
+    width: calc(100% + 15px);
+}
+
+/* Traditional */
+ion-content.traditional::part(scroll) {
+    top: -3%;
+}
+
+ion-content.tradIOS::part(scroll) {
+    top: 10.7%;
+}
+
+ion-content.tradIOSPro::part(scroll) {
+    top: 10.8%;
+}
+
+ion-content.tradIOSMax::part(scroll) {
+    top: 10.8%;
+}
+
+ion-content.tradIOSPlus::part(scroll) {
+    top: 10%;
+}
+
+ion-content.tradIOSSE::part(scroll) {
+    top: 10%;
+}
+
+ion-content.tradIOSIpad::part(scroll) {
+    top: 3.4678%;
+}
+
+ion-content.tradIOSIpadPro6G::part(scroll) {
+    top: 3.086%;
+}
+
+ion-content.tradIOSIpadMini::part(scroll) {
+    top: 3.51%;
+}
+
+ion-content.tradIOSIpadPro4G::part(scroll) {
+    top: 1.168%;
+}
+
+ion-infinite-scroll {
+    padding-bottom: 0%;
+}
+
+ion-grid.videoGrid {
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 1;
+}
+
+ion-grid.useLargeDesktop {
+    width: calc(100vw - 0%); /* removes unwanted padding from edge of larger displays */
+}
+
+ion-grid.circlePeerGrid {
+    display: grid;
+    flex-wrap: wrap;
+    column-count: 2;
+}
+
+ion-grid.circlePeerGridMargin {
+    margin-top: -15px;
+    margin-left: -1%;
+}
+
+ion-grid.circlePeerGridMobileMargin {
+    margin-top: -1.25%;
+    margin-left: 0.5%; /* adds addition padding to edge of smaller displays */
+}
+
+ion-grid.cratesGrid {
+    display: grid;
+    flex-wrap: wrap;
+    column-count: 2;
+}
+
+ion-grid.cratesGridMargin {
+    margin-top: -6px;
+}
+
+ion-grid.cratesGridMobileMargin {
+    margin-top: -1.5%;
+}
+
+ion-card, .card-ios, .card-md {
+    border-radius: 8px;
+    border-style: solid !important;
+}
+
+ion-card.scrollGuideTile {
+    display: hidden;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: 0% !important;
+    border: 0 !important;
+}
+
+ion-card.scrollTileIOS {
+    display: inline-block;
+    padding-bottom: 0.1px;
+}
+
+ion-card.aboutTile {
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(0, 0, 0, 0.4) 50%, rgba(153, 153, 153, 0.6) 100%), var(--url) center/cover fixed no-repeat;
+    color: rgb(255, 255, 255);
+    width: 100% !important;
+    height: 200px !important;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+ion-card.videoTile {
+    scroll-snap-align: start;
+    display: inline-flex; /* Ensures the video takes full width and acts like a block */
+    border: 0 !important;
+    border-radius: 0px;
+    margin: 0 !important;
+    margin-bottom: -14px !important;
+    padding: 0;
+    background: linear-gradient(
+        162deg,
+        rgba(135, 135, 135, 0.2) 20%,
+        rgba(44, 44, 44, 0.8) 100%
+      ),
+      var(--mediaSrc) center/cover no-repeat !important; /* Dynamically load video backgrounds */
+    color: rgb(255, 255, 255);
+    height: 100vh; /* Takes full height of the viewport */
+    position: relative; /* To allow overlayed elements (like controls) */
+    overflow: hidden; /* Ensure no scrollbars appear due to child elements */
+}
+
+.videoTileMax {
+    width: 100% !important;
+    margin-top: 0% !important;
+}
+
+.videoTileMin {
+    width: 100% !important;
+    margin-top: 0% !important;
+}
+
+ion-card.dayCard {
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(255, 255, 255, 0.3) 70%, rgba(191, 191, 191, 0.2) 100%);
+    color: rgb(255, 255, 255);
+    width: 100% !important;
+    height: 100px !important;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+ion-card.dayCardMedia {
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(0, 0, 0, 0.4) 50%, rgba(153, 153, 153, 0.6) 100%), var(--url) center/cover fixed no-repeat;
+    color: rgb(255, 255, 255);
+    width: 100% !important;
+    height: 124px !important;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+ion-card.plusSubMedia {
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(0, 0, 0, 0.4) 50%, rgba(55, 55, 55, 0.6) 100%), var(--url) center/cover fixed no-repeat;
+    color: rgb(255, 255, 255);
+    height: 200px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+ion-card.plusPlanCard {
+    display: inline-flex;
+    border: 0px !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(171, 171, 171, 0.3) 70%, rgba(191, 191, 191, 0.2) 100%);
+    color: rgb(255, 255, 255);
+    height: 100px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+ion-card.plusPlanSelectedCard {
+    display: inline-flex;
+    border-radius: 16px;
+    border: 3.25px !important;
+    border-style: solid !important;
+    border-color: #3dc2ff !important;
+    background: linear-gradient(162deg, rgba(255, 255, 255, 0.3) 70%, rgba(191, 191, 191, 0.2) 100%);
+    color: rgb(255, 255, 255);
+    height: 100px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+ion-card.productCard {
+    display: inline-flex;
+    border: 0px !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(171, 171, 171, 0.3) 70%, rgba(191, 191, 191, 0.2) 100%);
+    color: rgb(255, 255, 255);
+    height: 100px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+ion-card.productSelectionCard {
+    display: inline-flex;
+    border-radius: 16px;
+    border: 3.25px !important;
+    border-style: solid !important;
+    border-color: #3dc2ff !important;
+    background: linear-gradient(162deg, rgba(255, 255, 255, 0.3) 70%, rgba(191, 191, 191, 0.2) 100%);
+    color: rgb(255, 255, 255);
+    height: 100px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dayCardMax {
+    width: calc(100% - 5px) !important;
+    padding-top: 0;
+}
+
+.dayCardMin {
+    width: calc(100% - 15px) !important;
+    padding-top: 2%;
+}
+
+ion-card.genieCard {
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.6) 100%), var(--genie) top/cover fixed no-repeat;
+    color: rgb(255, 255, 255);
+    height: 350px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+ion-card.alertTile {
+    position: relative;
+    display: inline-block;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(255, 255, 255, 0.3) 70%, rgba(191, 191, 191, 0.2) 100%);
+    color: rgb(255, 255, 255);
+    height: 140px !important;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.alertTileMax {
+    width: calc(100% - 10px) !important;
+    padding-top: 2%;
+}
+
+.alertTileMin {
+    width: calc(100% - 15px) !important;
+    padding-top: 2%;
+}
+
+ion-card.circlePeerTile {
+    --cardColor: rgba(214, 214, 214, 0.4);
+    position: relative;
+    display: inline-block;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, var(--cardColor) 20%, rgba(94, 94, 94, 0.8) 100%);
+    color: rgb(255, 255, 255);
+    height: 145px !important;
+}
+
+.circlePeerTileMax {
+    width: 100% !important;
+}
+
+.circlePeerTileMin {
+    width: 88.55% !important; /* 33.33% */
+}
+
+ion-card.crateTile {
+    --cardColor: rgba(214, 214, 214, 0.4);
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, var(--cardColor) 50%, rgba(109, 109, 109, 0.8) 100%);
+    color: rgb(255, 255, 255);
+    height: 140px !important;
+    padding-top: 8px;
+    transition: transform 0.3s;
+    margin-bottom: 16px !important;
+    margin: 0 auto;
+}
+
+ion-card.crateTileComplete {
+    --cardColor: rgba(214, 214, 214, 0.4);
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, var(--cardColor) -150%, rgba(94, 94, 94, 0.2) 100%);
+    color: rgb(255, 255, 255);
+    height: 140px !important;
+    margin-bottom: 16px !important;
+    margin: 0 auto;
+}
+
+.crateTileMax {
+    width: 93% !important;
+}
+
+.crateTileMin {
+    width: 93% !important;
+}
+
+.crateMobileIpad {
+    width: 93% !important;
+}
+
+ion-card-title.crateCardTile {
+    font-size: 20px !important;
+    color: white !important;
+    bottom: 8px;
+    margin-left: -4px;
+}
+
+ion-card-subtitle.crateCardSubtitle {
+    text-transform: none;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: white !important;
+    top: 90px;
+    margin-left: -4px;
+}
+
+ion-card-title.miscCardTitle {
+    font-size: 24px !important;
+    color: white !important;
+    top: 6px;
+}
+
+ion-card-subtitle.miscCardSubtitle {
+    text-transform: none;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: white !important;
+    margin-bottom: -80px;
+}
+
+ion-card-title.plusSubMediaTitle {
+    font-style: italic;
+    font-size: 24px !important;
+    color: white !important;
+    margin-bottom: 34px;
+}
+
+ion-card-subtitle.plusSubMediaSubtitle {
+    text-transform: none;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: white !important;
+    margin-bottom: -148px;
+    line-height: 1.5em;
+}
+
+ion-card-title.alertTileTitle {
+    font-size: 24px !important;
+    color: white !important;
+    top: 14px;
+}
+
+ion-card-subtitle.alertTileSubtitle {
+    text-transform: none;
+    font-size: 14px !important;
+    color: white !important;
+    margin-bottom: -8px; 
+}
+
+ion-card-title.alertTileSender {
+    font-size: 24px !important;
+    color: white !important;
+    top: 7px;
+}
+
+ion-card-subtitle.alertTileMsg {
+    font-size: 18px !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    color: white !important;
+    margin-bottom: -90px;
+    text-transform: none !important;
+}
+
+ion-avatar.alertMsgAvatar {
+    position: absolute;
+    top: -74px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    margin-top: 32px;
+}
+
+ion-avatar.alertTileAvatar {
+    position: absolute;
+    top: -74px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    margin-top: 19px;
+}
+
+ion-avatar.videoAvatar {
+    position: absolute;
+    top: -17.5px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    margin-top: 32px;
+}
+
+ion-avatar.videoAvatarMobile {
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    margin-top: 32px;
+}
+
+ion-avatar.peerAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 1.5px !important;
+    border-style: solid !important;
+    border-color: white !important;
+}
+
+.circlePeerAvatar {
+    margin-left: -10px;
+    width: 50px; 
+    height: 50px;
+}
+
+.attrDiv {
+    margin-top: 8px !important;
+}
+
+.messageRowMobile {
+    padding-bottom: 8px;
+}
+
+.message-image-button {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+  
+.message-input {
+    flex: 1;
+    margin: 0;
+    margin-left: -8px !important;
+    padding: 0 1px;
+}
+  
+.messageButton {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: right;
+    margin-left: auto; /* Pushes the button to the rightmost edge */
+    margin-right: -16px; /* Adjust this to create space between input and button */
+}
+
+.androidAdjustInput {
+    margin-bottom: 24px !important;
+}
+  
+/* Ensure toolbar items are centered and aligned properly */
+ion-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+/* Flexbox layout for ion-col */
+.message-button-col {
+    display: flex;
+    align-items: center;
+}
+  
+.spacer-button {
+    margin: 0 auto !important;
+}
+  
+.message-button-col ion-input {
+    margin-left: 0;
+}
+  
+.message-button-col .message-image-button {
+    margin-left: -16px !important;
+    margin-right: 0px;
+}
+  
+.messageButtonMobile {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: right;
+    margin-left: auto; /* Pushes the button to the rightmost edge */
+    margin-right: -16px;
+}
+  
+.messageButtonMobileIPad {
+    margin-right: -16px;
+}
+
+.chatBubbleTimeSender {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 75%; /* Adjust the width as needed */
+    margin-left: 25%;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.chatBubbleTimeSenderExtended {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 75%; /* Adjust the width as needed */
+    margin-left: 58%;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.chatBubbleTimeRecipient {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 75%; /* Adjust the width as needed */
+    margin-left: 2.5%;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+ion-card-title.circlePeerTileTitle {
+    font-size: 20px !important;
+    color: white !important;
+    width: 110px;
+    height: 100%;
+    margin-left: -6px;
+    margin-bottom: 36px;
+}
+
+ion-card-subtitle.circlePeerTileSubtitle {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: white !important;
+    margin-left: -6px;
+    top: 65.5px;
+}
+
+ion-avatar.circlePeerTileAvatar {
+    position: absolute;
+    top: 30px;
+    right: -2px;
+    width: 70px; 
+    height: 70px;
+}
+
+ion-avatar.circlePeerTileAvatarMobile {
+    position: absolute;
+    top: -30px;
+    right: -2px;
+    width: 70px; 
+    height: 70px;
+}
+
+ion-card.peerTile {
+    position: relative;
+    display: inline-block;
+    border: 0 !important;
+    border-radius: 16px;
+    background: linear-gradient(162deg, rgba(0, 0, 0, 0.6) 20%, rgba(255, 255, 255, 0.3) 100%), var(--url) center/cover fixed no-repeat;
+    color: rgb(255, 255, 255);
+    height: 400px !important;
+    margin: 15px;
+    margin-bottom: 4%;
+}
+
+.peerTileMax {
+    width: calc(100% - 55px) !important;
+    padding-top: 2%;
+}
+
+.peerTileMin {
+    width: calc(100% - 45px) !important;
+    padding-top: 2%;
+}
+
+ion-card-header {
+    width: 100% !important;
+    height: 50% !important;
+}
+
+ion-card-title.tileVideoTitle {
+    font-size: 21px !important;
+    font-weight: 400;
+    color: white !important;
+    margin: 4px !important;
+}
+
+ion-card-subtitle.tileVideoSubtitle {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: white !important;
+    margin: 16px !important;
+}
+
+ion-card-content.tileVideoContent {
+    font-size: 24px;
+    padding-left: 20px;
+    margin-top: -28%;
+}
+
+ion-card-title.dayCardTitle {
+    font-size: 24px !important;
+    color: white !important;
+    margin-bottom: -10px;
+}
+
+ion-card-subtitle.dayCardSubtitle {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: white !important;
+    margin-bottom: -60px;
+}
+
+ion-card-title.dayCardMediaTitle {
+    font-size: 24px !important;
+    color: white !important;
+}
+
+ion-card-subtitle.dayCardMediaSubtitle {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: white !important;
+    margin-bottom: -86px;
+}
+
+ion-card-title.alertTileTitle {
+    font-size: 24px !important;
+    color: white !important;
+    top: 14px;
+}
+
+ion-card-subtitle.alertTileSubtitle {
+    font-size: 14px !important;
+    color: white !important;
+    margin-bottom: -8px; 
+}
+
+ion-avatar.alertTileAvatar {
+    position: absolute;
+    top: -74px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    margin-top: 19px;
+}
+
+ion-card-title.circlePeerTileTitle {
+    font-size: 20px !important;
+    color: white !important;
+    width: 110px;
+    height: 100%;
+    margin-left: -6px;
+    margin-bottom: -1px;
+}
+
+ion-card-subtitle.circlePeerTileSubtitle {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: white !important;
+    margin-left: -6px;
+    top: 92.5px;
+}
+
+ion-avatar.circlePeerTileAvatar {
+    position: absolute;
+    top: 10px;
+    right: -3px;
+    width: 75px; 
+    height: 75px;
+}
+
+ion-card-title.peerTileTitle {
+    font-size: 36px !important;
+    color: white !important;
+    margin-left: 2%;
+}
+
+ion-card-subtitle.peerTileSubtitle {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: white !important;
+    margin-left: 2%;
+    margin-bottom: 60px;
+}
+
+ion-card-subtitle.peerTileSubSubtitle {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: white !important;
+    margin-left: 2%;
+    margin-bottom: -300px;
+}
+
+ion-avatar.peerTileAvatar {
+    position: absolute;
+    top: -205px;
+    right: 20px;
+    width: 65px; 
+    height: 65px;
+}
+
+ion-card.activeVideo {
+    border: 2.5px !important;
+    border-style: solid !important;
+    border-color: white !important;
+}
+
+ion-card.videoCard {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0 !important;
+    border-radius: 16px;
+    box-shadow: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    height: 480px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+ion-card.audioCard {
+    display: inline-flex;
+    border: 0 !important;
+    border-radius: 16px;
+    box-shadow: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    height: 40px !important;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(162deg, rgba(0, 0, 0, 0.5) 60%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+ion-avatar.userAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 2.25px !important;
+    border-style: solid !important;
+    border-color: white !important;
+}
+
+ion-avatar.tinkerZeroAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 2.25px !important;
+    border-style: solid !important;
+    border-color: #eb445a !important;
+}
+
+ion-avatar.tinkerUnoAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 2.25px !important;
+    border-style: solid !important;
+    border-color: #3dc2ff !important;
+}
+
+ion-avatar.tinkerDosAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 2.25px !important;
+    border-style: solid !important;
+    border-color: #ff4f00 !important;
+}
+
+ion-avatar.merchantAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 2.25px !important;
+    border-style: solid !important;
+    border-color: #34e165 !important;
+}
+
+ion-avatar.pressAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 2.25px !important;
+    border-style: solid !important;
+    border-color: #bf67ff !important;
+}
+
+ion-avatar.angelAvatar {
+    background-color: rgb(45, 45, 45);
+    border: 2.25px !important;
+    border-style: solid !important;
+    border-color: #ffc409 !important;
+}
+
+ion-list-header.listHeader {
+    height: 60px;
+}
+
+ion-label.listHeader {
+    margin-bottom: 16px;
+}
+
+.blur {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: -99;
+    backdrop-filter: blur(1.25px);
+    top: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+.setupDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+}
+
+.signInDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+.idleDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+.logoDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.joinAvatarDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.addAvatarDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.profileAvatarDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 18%;
+    margin: 0 auto !important;
+    margin-top: 5% !important;
+    margin-bottom: 10% !important;
+}
+
+.online-indicator {
+    margin-left: 16px;
+    width: 12px; /* Adjust the size as needed */
+    height: 12px; /* Adjust the size as needed */
+    background-color: #2dd36f;
+    border-radius: 50%; /* Makes it a circle */
+    animation: blink 1s infinite; /* Animation duration and repeat */
+}
+
+.online-indicator-span {
+    display: inline-block;
+    margin-left: 5px;
+    /*margin-bottom: 2.5px;*/
+    margin-bottom: calc(0.75%);
+    width: 10px; /* Adjust the size as needed */
+    height: 10px; /* Adjust the size as needed */
+    background-color: #2dd36f;
+    border-radius: 50%; /* Makes it a circle */
+    animation: blink 1s infinite; /* Animation duration and repeat */
+}
+
+.recording-indicator-span {
+    display: inline-block;
+    margin-left: 5px;
+    /*margin-bottom: 2.5px;*/
+    margin-bottom: calc(0.75%);
+    width: 10px; /* Adjust the size as needed */
+    height: 10px; /* Adjust the size as needed */
+    background-color: #ff3434;
+    border-radius: 50%; /* Makes it a circle */
+    animation: blink 1s infinite; /* Animation duration and repeat */
+}
+
+.funnel-indicator-span {
+    display: inline-block;
+    margin-left: 5px;
+    /*margin-bottom: 2.5px;*/
+    margin-bottom: calc(0.75%);
+    width: 10px; /* Adjust the size as needed */
+    height: 10px; /* Adjust the size as needed */
+    background-color: #3dc2ff;
+    border-radius: 50%; /* Makes it a circle */
+    animation: blink 1s infinite; /* Animation duration and repeat */
+}
+
+@keyframes blink {
+0%, 100% {
+    opacity: 0; /* Invisible */
+}
+50% {
+    opacity: 1; /* Visible */
+}
+}
+
+.innerDiv {
+    display: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 2%;
+}
+
+.contextDiv {
+    display: absolute;
+    margin-top: 40px;
+    margin-left: 8px;
+}
+
+.footerDiv {
+    backdrop-filter: blur(2px); /*  blur(6px) */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 8%;
+    margin: 0 auto !important;
+    color: white;
+}
+
+.tinyFooterDiv {
+    backdrop-filter: blur(2px); /*  blur(6px) */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 4%;
+    margin: 0 auto !important;
+    color: white;
+}
+
+.videoContentDiv {
+    display: absolute;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: -4px;
+    line-height: 1.8em;
+}
+
+.supportContentDiv {
+    display: absolute;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 5%;
+    line-height: 1.8em;
+}
+
+.profileInnerDiv {
+    display: absolute;
+    margin-top: 24px;
+    padding-bottom: 2%;
+}
+
+.innerDiv {
+    display: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 2%;
+}
+
+.contextDiv {
+    display: absolute;
+    margin-top: 40px;
+    margin-left: 8px;
+}
+
+.peerAvatarsDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+.centerButtonDiv {
+    display: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.videoContentDiv {
+    display: absolute;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    line-height: 1.5em;
+}
+
+.emptyElementsDiv {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    height: 75px;
+    margin-left: 16px !important;
+    padding-bottom: 5%;
+}
+
+.plusSubDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 75px;
+    margin-top: -16px;
+    margin-bottom: 16px;
+    margin-left: -8px;
+}
+
+.settingsFooterDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 25px;
+    margin-top: 32px;
+    margin-bottom: 100px;
+    margin-left: -16px;
+}
+
+.desktopDisplay {
+    max-width: 600px; /* Adjust this value to your desired max width */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto !important; /* Center the content */
+}
+
+.desktopDisplayIDExtend {
+    max-width: 600px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tabletDisplay {
+    max-width: 600px; /* Adjust this value to your desired max width */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the content */
+}
+
+.player {
+    margin-top: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video {
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.bounce {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.wiggle {
+    animation: wiggleAnimation 0.3s ease-in-out;
+}
+
+@keyframes wiggleAnimation {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}

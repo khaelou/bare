@@ -9,8 +9,7 @@ import { IonApp, IonRouterOutlet } from '@ionic/vue';
 import { browserSessionPersistence, getAuth, indexedDBLocalPersistence, inMemoryPersistence, onAuthStateChanged, setPersistence } from 'firebase/auth';
 import { onMounted } from 'vue';
 import { clientInitialized, openSetupOnBoard } from './clientHandler';
-import { app, db } from '@/firebase';
-import { clearIndexedDbPersistence } from 'firebase/firestore';
+import { app } from '@/firebase';
 
 onMounted(() => {
   const auth = getAuth(app);

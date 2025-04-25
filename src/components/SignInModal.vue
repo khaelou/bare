@@ -7,7 +7,7 @@
     <ion-content class="ion-padding noselect">
       <div class="signInDiv">
         <ion-avatar class="userAvatar" style="width: 124px; height: 124px;">
-          <img class="userAvatarSrc" alt="" src="/assets/avatar.svg"/>
+          <img class="userAvatarSrc" alt="" :src="avatarSrc" />
         </ion-avatar>
       </div>
 
@@ -59,11 +59,14 @@ import { auth, clientInitialized, closeSetupOnboard, closeModal } from "@/client
 import { db } from "@/firebase"; 
 import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { collection, doc, getDoc, query, where, getDocs } from "firebase/firestore";
+import { fetchMediaBlob } from "@/modules/utils";
 
 const username = ref("");
 const email = ref("");
 const password = ref("");
 const errMsg = ref("");
+
+const avatarSrc = ref("/assets/avatar.svg");
 
 onMounted(() => {
   //checkDesktopDisplay();
@@ -89,11 +92,7 @@ const handleEmail = async (event: any) => {
     if (querySnapshot.empty) {
       //console.log("(signInModal) handleEmail: No user found with this email.");
 
-      const userAvatarSrc = document.querySelector('.userAvatarSrc');
-      if (userAvatarSrc) {
-        //console.log("(signInModal) RESET_PHOTO_IN_VIEW");
-        userAvatarSrc.setAttribute('src', '/assets/avatar.svg'); // Reset to default avatar
-      }
+      avatarSrc.value = "/assets/avatar.svg";
       return;
     }
 
@@ -142,27 +141,31 @@ const signIn = () => {
 };
 
 const forgotCredentials = () => {
-  console.log(`(signInModal) fireBase.forgotCredentials!`);
+  console.log(`(forgotCredentials) FORGOT_CREDENTIALS!`);
 };
+
 
 const getAvatar = async (data: any) => {
   const clientUserID = data.id;
   const userDocRef = doc(db, "users", clientUserID);
   const userDocSnap = await getDoc(userDocRef);
 
-  if (userDocSnap.exists()) {
-    const avatar = userDocSnap.data().avatar;
-    if (avatar) {
-      console.log("(signInModal) getAvatar:", avatar);
+  if (!userDocSnap.exists()) {
+    console.warn("(getAvatar) INVALID_AVATAR_FETCH:", userDocRef, data.id);
+    return;
+  }
 
-      const userAvatarSrc = document.querySelector('.userAvatarSrc');
-      if (userAvatarSrc) {
-        console.log("(signInModal) SET_PHOTO_IN_VIEW");
-        userAvatarSrc.setAttribute('src', `${avatar}`);
-      }
-    }
-  } else {
-    console.log("(signInModal) user_invalid", userDocRef, data.id)
+  const avatar = userDocSnap.data().avatar;
+  if (!avatar) {
+    console.warn("(getAvatar) NO_AVATAR:", clientUserID);
+    return;
+  }
+
+  try {
+    fetchMediaBlob(avatarSrc, avatar);
+  } catch (err) {
+    console.error("(getAvatar) Error loading avatar:", err);
+    avatarSrc.value = "/assets/avatar.svg";
   }
 };
 </script>

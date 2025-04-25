@@ -9,18 +9,12 @@ export let setup: any = ref();
 export const setupDismissed = ref(false);
 
 export let clientInitialized = ref(false);
-export let clientReady = ref(false);
-export let clientOnlyBrowsing = ref(true);
 
 export const auth = getAuth(app);
 
 export function openSetupOnBoard() {
     console.log('SETUP_ON_BOARD');
     setupModal();
-
-    if (!clientReady.value && clientOnlyBrowsing.value) {
-        clientReady.value = true;
-    }
 }
 
 export function closeSetupOnboard() {
@@ -28,7 +22,7 @@ export function closeSetupOnboard() {
 
     closeModal();
     if (setup) {
-        setup.remove();
+      setup.remove();
     }
 }
 
